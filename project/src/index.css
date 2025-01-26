@@ -1,16 +1,31 @@
 @import 'tailwindcss';
+@plugin "daisyui" {
+   colorthemes: light dark;
+}
+
+@plugin "daisyui/theme" {
+   name: 'light';
+}
 
 :root {
-   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-   line-height: 1.5;
-   font-weight: 400;
+   font-family: 'Inter', sans-serif;
 
    color-scheme: light dark;
-   color: rgba(255, 255, 255, 0.87);
-   background-color: #242424;
 
    font-synthesis: none;
    text-rendering: optimizeLegibility;
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
+
+   --defaultRadius: var(--radius-lg);
+}
+
+h1,
+h2 {
+   @apply text-2xl;
+   font-family: 'Roboto Flex', sans-serif;
+}
+
+.btn {
+   @apply rounded-(--defaultRadius);
 }
