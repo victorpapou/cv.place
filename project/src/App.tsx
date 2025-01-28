@@ -43,7 +43,7 @@ function App() {
                      , которое работает,
                      <br /> пока ты отдыхаешь.
                   </h1>
-                  <p className='text-xl mt-5'>
+                  <p className='text-xl mt-5 opacity-60'>
                      Создание меньше 7 минут, одно резюме бесплатно
                   </p>
                </div>
@@ -64,102 +64,100 @@ function App() {
                         <ArrowRightIcon className='h-4' />
                      </button>
                   </label>
-                  <p className='mt-2'>Займите свой ник, пока не поздно!</p>
+                  <p className='mt-2 opacity-60'>Займите свой ник, пока не поздно!</p>
                </div>
+               {/* cv hosting snippet
+               <h3 className='text-2xl font-semibold'>Топ 10 резюме месяца</h3>
                <div className='col-start-3 col-span-6'>
-                  <h3 className='text-2xl font-semibold'>Топ 10 резюме месяца</h3>
                   <div className='grid grid-cols-5 gap-4 mt-5'>
-                     <a href=''>
+                     <a className='avatar' href=''>
                         <img
-                           className='avatar'
-                           src='https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp'
+                           src='https://static.vecteezy.com/system/resources/thumbnails/007/209/020/small/close-up-shot-of-happy-dark-skinned-afro-american-woman-laughs-positively-being-in-good-mood-dressed-in-black-casual-clothes-isolated-on-grey-background-human-emotions-and-feeligs-concept-photo.jpg'
                         />
                      </a>
-                     <a href=''>
+                     <a className='avatar' href=''>
                         <img
-                           className='avatar'
-                           src='https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp'
+                           src='https://static.vecteezy.com/system/resources/thumbnails/007/209/020/small/close-up-shot-of-happy-dark-skinned-afro-american-woman-laughs-positively-being-in-good-mood-dressed-in-black-casual-clothes-isolated-on-grey-background-human-emotions-and-feeligs-concept-photo.jpg'
                         />
                      </a>
-                     <a href=''>
+                     <a className='avatar' href=''>
                         <img
-                           className='avatar'
-                           src='https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp'
+                           src='https://static.vecteezy.com/system/resources/thumbnails/007/209/020/small/close-up-shot-of-happy-dark-skinned-afro-american-woman-laughs-positively-being-in-good-mood-dressed-in-black-casual-clothes-isolated-on-grey-background-human-emotions-and-feeligs-concept-photo.jpg'
                         />
                      </a>
-                     <a href=''>
+                     <a className='avatar' href=''>
                         <img
-                           className='avatar'
-                           src='https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp'
+                           src='https://static.vecteezy.com/system/resources/thumbnails/007/209/020/small/close-up-shot-of-happy-dark-skinned-afro-american-woman-laughs-positively-being-in-good-mood-dressed-in-black-casual-clothes-isolated-on-grey-background-human-emotions-and-feeligs-concept-photo.jpg'
                         />
                      </a>
-                     <a href=''>
+                     <a className='avatar' href=''>
                         <img
-                           className='avatar'
-                           src='https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp'
+                           src='https://static.vecteezy.com/system/resources/thumbnails/007/209/020/small/close-up-shot-of-happy-dark-skinned-afro-american-woman-laughs-positively-being-in-good-mood-dressed-in-black-casual-clothes-isolated-on-grey-background-human-emotions-and-feeligs-concept-photo.jpg'
                         />
                      </a>
-                     <a href=''>
+                     <a className='avatar' href=''>
                         <img
-                           className='avatar'
-                           src='https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp'
+                           src='https://static.vecteezy.com/system/resources/thumbnails/007/209/020/small/close-up-shot-of-happy-dark-skinned-afro-american-woman-laughs-positively-being-in-good-mood-dressed-in-black-casual-clothes-isolated-on-grey-background-human-emotions-and-feeligs-concept-photo.jpg'
                         />
                      </a>
-                     <a href=''>
+                     <a className='avatar' href=''>
                         <img
-                           className='avatar'
-                           src='https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp'
+                           src='https://static.vecteezy.com/system/resources/thumbnails/007/209/020/small/close-up-shot-of-happy-dark-skinned-afro-american-woman-laughs-positively-being-in-good-mood-dressed-in-black-casual-clothes-isolated-on-grey-background-human-emotions-and-feeligs-concept-photo.jpg'
                         />
                      </a>
-                     <a href=''>
+                     <a className='avatar' href=''>
                         <img
-                           className='avatar'
-                           src='https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp'
+                           src='https://static.vecteezy.com/system/resources/thumbnails/007/209/020/small/close-up-shot-of-happy-dark-skinned-afro-american-woman-laughs-positively-being-in-good-mood-dressed-in-black-casual-clothes-isolated-on-grey-background-human-emotions-and-feeligs-concept-photo.jpg'
                         />
                      </a>
-                     <a href=''>
+                     <a className='avatar' href=''>
                         <img
-                           className='avatar'
-                           src='https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp'
+                           src='https://static.vecteezy.com/system/resources/thumbnails/007/209/020/small/close-up-shot-of-happy-dark-skinned-afro-american-woman-laughs-positively-being-in-good-mood-dressed-in-black-casual-clothes-isolated-on-grey-background-human-emotions-and-feeligs-concept-photo.jpg'
                         />
                      </a>
-                     <a href=''>
+                     <a className='avatar' href=''>
                         <img
-                           className='avatar'
-                           src='https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp'
+                           src='https://static.vecteezy.com/system/resources/thumbnails/007/209/020/small/close-up-shot-of-happy-dark-skinned-afro-american-woman-laughs-positively-being-in-good-mood-dressed-in-black-casual-clothes-isolated-on-grey-background-human-emotions-and-feeligs-concept-photo.jpg'
                         />
                      </a>
                   </div>
                   <button className='mt-5 btn btn-sm'>Смотреть все резюме</button>
                </div>
+               */}
+
+
             </section>
+            <div className='container grid-responsive'>
+               <div className="col-span-10 text-center">
+                  <p className=' text-2xl font-medium opacity-60'>cv.place – это сайт для хостинга резюме и портфолио. Отправляйте эйчарам собственные ссылки, вместо скучных pdf или даже распечаток... бррр</p>
+                  <button className='mt-10 btn btn-accent'>Создать своё резюме</button>
+                  <p className='mt-2 opacity-60'>это очень просто</p>
+               </div>
+               <img className='col-span-10 object-cover aspect-video rounded-2xl h-full' src="https://www.digitalsilk.com/wp-content/uploads/2020/06/website-development-process-hero-image.png" alt="" />
+            </div>
             <section className='container grid-responsive'>
                <div className='col-span-10 text-center'>
                   <h2>Выберите план и срок</h2>
-                  <div className='tabs tabs-box inline-flex flex-nowrap mt-4'>
+                  <div className='tabs-xs tabs-box inline-flex flex-nowrap mt-4'>
                      <input
                         type='radio'
                         name='my_tabs_1'
                         role='tab'
                         className='tab w-1/2'
-                        aria-label='Monthly'
-                        //checked={selectedValue === 'option1'} // Pre-select option1
-                        //onChange={handleRadioChange}
+                        aria-label='Месяц'
+                     //checked={selectedValue === 'option1'} // Pre-select option1
+                     //onChange={handleRadioChange}
                      ></input>
-                     <div className='w-1/2 indicator'>
-                        <div className='indicator-item badge badge-warning badge-xs'>
-                           SALE
-                        </div>
-                        <input
-                           type='radio'
-                           name='my_tabs_1'
-                           role='tab'
-                           className='tab w-full'
-                           aria-label='Yearly'
-                           //checked={selectedValue === 'option2'} // Pre-select option2 if needed
-                           //onChange={handleRadioChange}
-                        ></input>
-                     </div>
+                     <input
+                        type='radio'
+                        name='my_tabs_1'
+                        role='tab'
+                        className='tab w-1/2'
+                        aria-label='Полгода -15%'
+                     //checked={selectedValue === 'option2'} // Pre-select option2 if needed
+                     //onChange={handleRadioChange}
+                     >
+                     </input>
                   </div>
                </div>
                <div className='card card-lg col-span-5'>
@@ -198,12 +196,7 @@ function App() {
                </div>
                <div className='card card-lg col-span-5'>
                   <div className='card-body'>
-                     <div className='flex justify-between'>
-                        <h2 className='text-3xl font-medium'>Спонсор</h2>
-                        <span className='badge px-1.5 rounded-full badge-primary'>
-                           $29/mo
-                        </span>
-                     </div>
+                     <h2 className='text-3xl font-medium'>Спонсор</h2>
                      <div className='flex gap-2'>
                         <label className='input'>
                            <p>{'$'}</p>
