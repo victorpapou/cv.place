@@ -29,8 +29,8 @@ function App() {
             </div>
          </nav>
          <main>
-            <section className='container grid-responsive text-center'>
-               <div className='col-span-10'>
+            <section className='container layout layout-centered text-center'>
+               <div className='layout-fill mt-20'>
                   <h1>
                      Резюме
                      <span className='inline-block align-baseline'>
@@ -43,12 +43,12 @@ function App() {
                      , которое работает,
                      <br /> пока ты отдыхаешь.
                   </h1>
-                  <p className='text-xl mt-5 opacity-60'>
+                  <p className='text-xl mt-6 opacity-60'>
                      Создание меньше 7 минут, одно резюме бесплатно
                   </p>
                </div>
-               <div className='col-start-3 col-span-6 pt-2'>
-                  <label className='input input-xl w-full'>
+               <div className='layout-6 pt-2'>
+                  <form className='input input-xl w-full'>
                      <img
                         src='src/assets/logo.png'
                         alt=''
@@ -59,13 +59,22 @@ function App() {
                         type='text'
                         className='grow'
                         placeholder='username'
+                        required
                      />
-                     <button className='btn btn-md'>
+                     <button
+                        type='submit'
+                        className='btn btn-md'
+                     >
                         <ArrowRightIcon className='h-4' />
                      </button>
-                  </label>
+                  </form>
                   <p className='mt-2 opacity-60'>Займите свой ник, пока не поздно!</p>
                </div>
+               <div className='layout-6 flex justify-center gap-2 mt-5'>
+                  <button className='btn btn-secondary'>Зарегестрироваться</button>
+                  <button className='btn btn-accent'>Создать своё резюме</button>
+               </div>
+
                {/* cv hosting snippet
                <h3 className='text-2xl font-semibold'>Топ 10 резюме месяца</h3>
                <div className='col-start-3 col-span-6'>
@@ -124,19 +133,25 @@ function App() {
                   <button className='mt-5 btn btn-sm'>Смотреть все резюме</button>
                </div>
                */}
-
-
             </section>
-            <div className='container grid-responsive'>
-               <div className="col-span-10 text-center">
-                  <p className=' text-2xl font-medium opacity-60'>cv.place – это сайт для хостинга резюме и портфолио. Отправляйте эйчарам собственные ссылки, вместо скучных pdf или даже распечаток... бррр</p>
-                  <button className='mt-10 btn btn-accent'>Создать своё резюме</button>
-                  <p className='mt-2 opacity-60'>это очень просто</p>
+            <div className='container layout'>
+               <div className='text-center layout-fill'>
+                  <p className='text-2xl font-medium opacity-60'>
+                     cv.place – это сайт для хостинга резюме и портфолио. Отправляйте
+                     эйчарам собственные ссылки, вместо скучных pdf или даже распечаток...
+                     бррр
+                  </p>
                </div>
-               <img className='col-span-10 object-cover aspect-video rounded-2xl h-full' src="https://www.digitalsilk.com/wp-content/uploads/2020/06/website-development-process-hero-image.png" alt="" />
+               <div className='layout-fill overflow-clip aspect-video rounded-2xl'>
+                  <img
+                     className='h-full w-(calc(100% + 1px)) object-cover skeleton'
+                     src=''
+                     alt=''
+                  />
+               </div>
             </div>
-            <section className='container grid-responsive'>
-               <div className='col-span-10 text-center'>
+            <section className='container layout'>
+               <div className='layout-fill text-center'>
                   <h2>Выберите план и срок</h2>
                   <div className='tabs-xs tabs-box inline-flex flex-nowrap mt-4'>
                      <input
@@ -145,27 +160,26 @@ function App() {
                         role='tab'
                         className='tab w-1/2'
                         aria-label='Месяц'
-                     //checked={selectedValue === 'option1'} // Pre-select option1
-                     //onChange={handleRadioChange}
-                     ></input>
+                        //checked={selectedValue === 'option1'} // Pre-select option1
+                        //onChange={handleRadioChange}
+                     />
                      <input
                         type='radio'
                         name='my_tabs_1'
                         role='tab'
                         className='tab w-1/2'
                         aria-label='Полгода -15%'
-                     //checked={selectedValue === 'option2'} // Pre-select option2 if needed
-                     //onChange={handleRadioChange}
-                     >
-                     </input>
+                        //checked={selectedValue === 'option2'} // Pre-select option2 if needed
+                        //onChange={handleRadioChange}
+                     />
                   </div>
                </div>
                <div className='card card-lg col-span-5'>
                   <div className='card-body'>
                      <div className='flex justify-between grow'>
-                        <h2 className='text-3xl font-medium'>Базовый</h2>
+                        <h4 className='font-medium'>Базовый</h4>
                      </div>
-                     <ul className='mt-6 flex flex-col opacity-60 gap-2'>
+                     <ul className='list attributeList mt-2'>
                         <li>
                            <CheckIcon className='size-4 inline-block align-middle' />
                            <span>High-resolution image generation</span>
@@ -182,8 +196,12 @@ function App() {
                            <CheckIcon className='size-4 inline-block align-middle' />
                            <span>AI-driven image enhancements</span>
                         </li>
+                        <li>
+                           <CheckIcon className='size-4 inline-block align-middle' />
+                           <span>AI-driven image enhancements</span>
+                        </li>
                      </ul>
-                     <div className='flex flex-col gap-2 mt-6 text-center'>
+                     <div className='flex flex-col gap-2 mt-2 text-center'>
                         <button
                            disabled
                            className='btn btn-block'
@@ -196,9 +214,9 @@ function App() {
                </div>
                <div className='card card-lg col-span-5'>
                   <div className='card-body'>
-                     <h2 className='text-3xl font-medium'>Спонсор</h2>
-                     <div className='flex gap-2'>
-                        <label className='input'>
+                     <h4 className='font-medium sponsor'>Спонсор</h4>
+                     <div className='flex flex-row gap-x-3 gap-y-2 justify-items-start'>
+                        <label className='input max-w-20'>
                            <p>{'$'}</p>
                            <input
                               type='price'
@@ -206,29 +224,35 @@ function App() {
                               placeholder='2.49'
                            />
                         </label>
-                        <p className='opacity-60'>Впиши справедливую цену за месяц</p>
+                        <p className=' opacity-60 leading-tight'>
+                           Впиши справедливую цену за месяц
+                        </p>
                      </div>
-                     <ul className='mt-6 flex flex-col opacity-60 gap-2'>
+                     <ul className='list attributeList mt-2'>
                         <li>
-                           <CheckIcon className='size-4 inline-block align-middle' />
-                           <span>High-resolution image generation</span>
+                           <CheckIcon className='size-4 inline-block align-middle mr-0.5' />
+                           <span>Какая то фишка №1</span>
                         </li>
                         <li>
-                           <CheckIcon className='size-4 inline-block align-middle' />
+                           <CheckIcon className='size-4 inline-block align-middle mr-0.5' />
                            <span>Customizable style templates</span>
                         </li>
                         <li>
-                           <CheckIcon className='size-4 inline-block align-middle' />
+                           <CheckIcon className='size-4 inline-block align-middle mr-0.5' />
                            <span>Batch processing capabilities</span>
                         </li>
                         <li>
                            <CheckIcon className='size-4 inline-block align-middle' />
                            <span>AI-driven image enhancements</span>
                         </li>
+                        <li>
+                           <CheckIcon className='size-4 inline-block align-middle' />
+                           <span>AI-driven image enhancements</span>
+                        </li>
                      </ul>
-                     <div className='flex flex-col gap-2 mt-6 text-center'>
+                     <div className='flex flex-col gap-2 mt-2 text-center'>
                         <button className='btn btn-block'>месяц бесплатно</button>
-                        <p className='opacity-60'>бесплатно навсегда</p>
+                        <p className='opacity-60'>потом $2.49 в месяц</p>
                      </div>
                   </div>
                </div>
