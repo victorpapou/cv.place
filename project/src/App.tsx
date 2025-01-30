@@ -1,16 +1,8 @@
 import './assets/logo.png';
 import './App.css';
-import { ArrowRightIcon, MoonIcon, SunIcon } from '@heroicons/react/24/outline';
-import { CheckIcon } from '@heroicons/react/16/solid';
 
-//const RadioButtonExample: React.FC = () => {
-//   // Step 3: Initialize state with default selected value
-//   const [selectedValue, setSelectedValue] = useState<string>('option1');
-//
-//   // Step 4: Handle change events
-//   const handleRadioChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-//     setSelectedValue(event.target.value);
-//   };
+import { CheckIcon, MoonIcon } from '@heroicons/react/16/solid';
+import { ArrowRightIcon, SunIcon } from '@heroicons/react/24/outline';
 
 function App() {
    return (
@@ -160,8 +152,6 @@ function App() {
                         role='tab'
                         className='tab w-1/2'
                         aria-label='Месяц'
-                        //checked={selectedValue === 'option1'} // Pre-select option1
-                        //onChange={handleRadioChange}
                      />
                      <input
                         type='radio'
@@ -169,8 +159,7 @@ function App() {
                         role='tab'
                         className='tab w-1/2'
                         aria-label='Полгода -15%'
-                        //checked={selectedValue === 'option2'} // Pre-select option2 if needed
-                        //onChange={handleRadioChange}
+                        defaultChecked
                      />
                   </div>
                </div>
